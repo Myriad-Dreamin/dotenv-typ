@@ -187,3 +187,11 @@ u4QuUoobAgMBAAE=
   ),
 )
 
+
+#assert.eq(parse-env(read("examples/.env")), ("KEY": "VALUE"))
+
+#let files = ("examples/.env", "examples/.env.local")
+#assert.eq(
+  files.map(it => parse-env(read(it))).sum(),
+  (KEY: "VALUE2", MORE_KEY: "VALUE3"),
+)

@@ -6,7 +6,16 @@ dotenv-typ is a zero-dependency module that loads environment variables from a `
 
 ```typ
 #import "@preview/dotenv:0.1.0": parse-env
-#assert.eq(parse-env(read("/.env")), ("KEY": "VALUE"))
+
+// From single files
+#assert.eq(parse-env(read(".env")), ("KEY": "VALUE"))
+
+// From multiple files
+#assert.eq(
+  (".env", ".env.local").map(it => parse-env(read(it))).sum(),
+  (KEY: "VALUE2", MORE_KEY: "VALUE3"),
+)
+
 ```
 
 ## License
