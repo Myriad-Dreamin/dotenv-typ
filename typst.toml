@@ -6,6 +6,6 @@ authors = ["Myriad-Dreamin <camiyoru@gmail.com>"]
 description = "Smoothly loads environment variables from dotenv (.env) files"
 license = "Apache-2.0"
 repository = "https://github.com/Myriad-Dreamin/dotenv-typ"
-keywords = ["dovenv", "parser"]
+keywords = ["dotenv", "parser"]
 categories = ["text", "utility", "scripting"]
 exclude = ["test.typ", "examples"]

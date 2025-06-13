@@ -1,6 +1,6 @@
 # dovenv
 
-dovenv is a zero-dependency module that smoothly loads environment variables from a `.env` file. It uses implementation and passes tests obtained from [dotenv.](https://github.com/motdotla/dotenv)
+dovenv (dove-env) is a zero-dependency module that smoothly loads environment variables from a `.env` file. It uses implementation and passes tests obtained from [dotenv.](https://github.com/motdotla/dotenv)
 
 ## Examples
 
